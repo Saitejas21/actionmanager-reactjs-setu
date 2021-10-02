@@ -19,9 +19,12 @@ import { IoBusinessOutline } from "react-icons/io5";
 import { BiFace } from "react-icons/bi";
 
 
+
+
 //import sidebar css from react-pro-sidebar module and our custom css 
 import "react-pro-sidebar/dist/css/styles.css";
 import "./Header.css";
+
 
 
 const Header = () => {
@@ -43,7 +46,7 @@ const Header = () => {
           <SidebarHeader>
           <div className="logotext">
               {/* small and big change using menucollapse state */}
-              <p>{menuCollapse ? "Logo" : "Big Logo"}</p>
+              <p>{menuCollapse ? "S" : "SETU"}</p>
             </div>
             <div className="closemenu" onClick={menuIconClick}>
                 {/* changing menu collapse icon on click */}
