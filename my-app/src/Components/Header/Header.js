@@ -12,10 +12,11 @@ import {
 } from "react-pro-sidebar";
 
 //import icons from react icons
-import { FaList, FaRegHeart } from "react-icons/fa";
-import { FiHome, FiLogOut, FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
-import { RiPencilLine } from "react-icons/ri";
-import { BiCog } from "react-icons/bi";
+import { FaChartBar } from "react-icons/fa";
+import { FiHome, FiArrowLeftCircle, FiArrowRightCircle, FiLifeBuoy, FiMoon, FiLock } from "react-icons/fi";
+import { RiBracesLine, RiStackLine } from "react-icons/ri";
+import { IoBusinessOutline } from "react-icons/io5";
+import { BiFace } from "react-icons/bi";
 
 
 //import sidebar css from react-pro-sidebar module and our custom css 
@@ -54,19 +55,22 @@ const Header = () => {
             </div>
           </SidebarHeader>
           <SidebarContent>
-            <Menu iconShape="square">
+            <Menu iconShape="circle">
               <MenuItem active={true} icon={<FiHome />}>
                 Home
               </MenuItem>
-              <MenuItem icon={<FaList />}>Category</MenuItem>
-              <MenuItem icon={<FaRegHeart />}>Favourite</MenuItem>
-              <MenuItem icon={<RiPencilLine />}>Author</MenuItem>
-              <MenuItem icon={<BiCog />}>Settings</MenuItem>
+              <MenuItem icon={<RiBracesLine />}>Category</MenuItem>
+              <MenuItem icon={<RiStackLine />}>Stack</MenuItem>
+              <MenuItem icon={<FaChartBar />}>Statistics</MenuItem>
+              <MenuItem icon={<IoBusinessOutline />}>Organisation</MenuItem>
+              <MenuItem icon={<FiLifeBuoy />}>Help</MenuItem>
             </Menu>
           </SidebarContent>
           <SidebarFooter>
-            <Menu iconShape="square">
-              <MenuItem icon={<FiLogOut />}>Logout</MenuItem>
+            <Menu iconShape="circle">
+              <MenuItem icon={<FiMoon />}>Dark Mode</MenuItem>
+              <MenuItem icon={<FiLock />}>Lock</MenuItem>
+              <MenuItem icon={<BiFace />}>Profile</MenuItem>
             </Menu>
           </SidebarFooter>
         </ProSidebar>
